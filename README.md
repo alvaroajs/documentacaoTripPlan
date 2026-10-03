@@ -1,5 +1,5 @@
 #  Trip Plan
-**Análise de requisitos · app Integração com o APp de Assinatura**
+**Análise de requisitos · app Integração com o App de Assinatura**
 
 ## Objetivo
 
