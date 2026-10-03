@@ -12,15 +12,15 @@ Permitir que clientes e atendentes simulem viagens longas com carros elétricos 
 | ID | Requisito | Fase |
 |---|---|:---:|
 | RF01 | Informar origem e destino da viagem | 1 |
-| RF02 | Calcular rota e consumo considerando relevo, velocidade e temperatura | 1 |
-| RF03 | Definir paradas com carga de chegada, carga de saída e tempo de recarga | 1 |
-| RF04 | Indicar um eletroposto alternativo (plano B) para cada parada | 1 |
-| RF05 | Informar quando não há plano viável e em qual trecho | 1 |
-| RF06 | Modo agência: simular com qualquer modelo da frota, sem login do cliente | 2 |
-| RF07 | Abrir a rota no Google Maps ou no Waze | 3 |
-| RF08 | Mostrar quanto da franquia de km a viagem consome | 3 |
-| RF09 | Ler a carga da bateria pela telemetria da Localiza | 3 |
-| RF10 | Recalcular o plano durante a viagem com a carga real | 4 |
+| RF02 | Calcular rota e consumo considerando relevo, velocidade e temperatura
+| RF03 | Definir paradas com carga de chegada, carga de saída e tempo de recarga 
+| RF04 | Indicar um eletroposto alternativo (plano B) para cada parada 
+| RF05 | Informar quando não há plano viável e em qual trecho
+| RF06 | Modo agência: simular com qualquer modelo da frota, sem login do cliente 
+| RF07 | Abrir a rota no Google Maps ou no Waze 
+| RF08 | Mostrar quanto da franquia de km a viagem consome 
+| RF09 | Ler a carga da bateria pela telemetria no app de assinatura 
+| RF10 | Recalcular o plano durante a viagem com a carga real 
 
 ## Regras de negócio
 
@@ -64,11 +64,3 @@ flowchart LR
 
 As bases abertas de eletropostos podem estar desatualizadas e não informam se o carregador está livre. Mitigação: plano B em toda parada, reserva mínima de 15% e ingestão diária dos dados.
 
-## Cronograma
-
-| Fase | Semanas | Entregas |
-|---|:---:|---|
-| 1. Fundação | 1–4 | Rotas, consumo, eletropostos e escolha de paradas |
-| 2. Modo agência | 5–7 | Tela do atendente e teste em agências |
-| 3. App do cliente | 8–13 | Integração no app, telemetria da bateria, navegação e franquia |
-| 4. Recálculo e ML | 14–23 | Recálculo em viagem e modelo de consumo treinado com a telemetria da frota |
